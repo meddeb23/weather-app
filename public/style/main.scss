@@ -1,0 +1,256 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.card-ui {
+  margin: 10px 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 16px;
+}
+.loading {
+  text-align: center;
+  display: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 1000px;
+  margin: 1rem auto 0;
+  .header-warpper {
+    background-image: url("/images/pexels-scott-webb-1048043.jpg");
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    header {
+      padding: 10px;
+      .searchForm {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 auto;
+        padding: 0 16px;
+        border-radius: 30px;
+        color: #fff;
+        width: 180px;
+        border: 1px solid #fff;
+        .icon {
+          cursor: pointer;
+        }
+        input {
+          display: block;
+          width: 100%;
+          border: none;
+          font-size: 14px;
+          text-align: left;
+          padding: 7px 1rem;
+          outline: none;
+          background: transparent;
+          color: #fff;
+        }
+        ::placeholder {
+          color: #fff;
+        }
+      }
+    }
+    #main {
+      padding: 0 2rem;
+      border-radius: 16px;
+      width: 400px;
+      .header {
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        color: #fff;
+        .container {
+          align-items: flex-start;
+          width: 200px;
+          justify-content: space-around;
+          .location-info {
+            padding-top: 4px;
+            .country {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-family: "Roboto";
+              font-size: 56px;
+            }
+            .city {
+              color: #f4f4f4;
+              text-align: center;
+            }
+          }
+          .temp {
+            font-size: 40px;
+            font-weight: bold;
+            padding-top: 9px;
+            sup {
+              font-size: 25px;
+              color: #fe6230;
+              font-weight: 100;
+            }
+          }
+        }
+        .icon {
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .body {
+        width: 200px;
+        padding: 0 2rem;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+      }
+    }
+  }
+  .card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 16px;
+    width: 230px;
+    position: relative;
+    margin: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: backgound-color 400ms ease-in-out;
+    cursor: pointer;
+
+    .header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      // width: 150px;
+      color: #212121;
+
+      .location-info {
+        padding-top: 4px;
+        .date {
+          font-weight: 700;
+          font-size: 16px;
+        }
+        .weather {
+          font-size: 12px;
+          color: #cbcbcb;
+        }
+      }
+      .temp {
+        font-size: 35px;
+        font-weight: bold;
+        color: #673ab7;
+        transition: color 400ms ease-in-out;
+
+        sup {
+          font-size: 25px;
+          font-weight: 100;
+        }
+      }
+      .icon {
+        border-radius: 12px;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  .card:hover {
+    background-color: #5b44b9;
+    .header {
+      .temp {
+        color: #fff;
+      }
+    }
+  }
+  .one {
+    .result {
+      margin: 10px 2rem;
+      width: 270px;
+      h1 {
+        margin: 0 10px 10px;
+        font-weight: 100;
+        text-align: center;
+        font-size: 30px;
+      }
+      #response {
+      }
+    }
+    .more-info {
+      background-image: url("/images/pexels-zachary-debottis-1845296.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 400px;
+      height: 300px;
+    }
+  }
+}
+
+@media screen and(max-width: 760px) {
+  body {
+    margin: 0;
+    .header-warpper {
+      margin: 0;
+      border-radius: 0 0 16px 16px;
+      // header {
+      //   .searchForm {
+      //     margin: auto;
+      //   }
+      // }
+      #main {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    .one {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .more-info {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes ldio-u6wmgzlxuh9 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.ldio-u6wmgzlxuh9 div {
+  position: absolute;
+  animation: ldio-u6wmgzlxuh9 0.91s linear infinite;
+  width: 70px;
+  height: 70px;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+  box-shadow: 0 3.3000000000000003px 0 0 #ffffff;
+  transform-origin: 35px 36.65px;
+}
+.loadingio-spinner-eclipse-tl18qrapo1f {
+  width: 71px;
+  height: 71px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+}
+.ldio-u6wmgzlxuh9 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(0.71);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+.ldio-u6wmgzlxuh9 div {
+  box-sizing: content-box;
+}
